@@ -41,7 +41,7 @@ module X
 
       return unless json?(response)
 
-      puts "response.headers: #{response.headers}"
+      puts "response.headers: #{response.header}"
       JSON.parse(response.body, array_class: array_class, object_class: object_class)
     end
 
